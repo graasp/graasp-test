@@ -1,0 +1,39 @@
+{
+  "name": "graasp-test",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prettier:check": "prettier --check \"{src,test}/**/*.ts\"",
+    "prettier:write": "prettier --write \"{src,test}/**/*.ts\"",
+    "test": "jest test --forceExit --coverage --verbose",
+    "test:watch": "npm run test -- --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graasp/graasp-test.git"
+  },
+  "keywords": [],
+  "author": "Graasp Association",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/graasp/graasp-test/issues"
+  },
+  "homepage": "https://github.com/graasp/graasp-test#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/eslint": "^7.2.5",
+    "@types/graasp": "git://github.com/graasp/graasp-types.git#1/refactor-tasks",
+    "@types/node": "^14.14.7",
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^8.3.0",
+    "fastify": "^3.8.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.0.5"
+  }
+}
