@@ -120,8 +120,10 @@ export default class TaskManager implements ItemTaskManager {
   }
   createGetChildrenTask(
     actor: Actor,
-    itemId: string,
-    ordered?: boolean,
+    input?: {
+      itemId: string,
+      ordered?: boolean
+    },
   ): Task<Actor, Item<UnknownExtra>[]> {
     throw new Error('Method createGetChildrenTask not implemented.');
   }
