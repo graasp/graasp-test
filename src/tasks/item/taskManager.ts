@@ -69,13 +69,13 @@ export default class TaskManager implements ItemTaskManager {
     return 'CopyTaskName';
   }
   getGetChildrenTaskName(): string {
-    return 'GetChildrenTaskName'
+    return 'GetChildrenTaskName';
   }
   getGetOwnTaskName(): string {
-    return 'GetOwnTaskName'
+    return 'GetOwnTaskName';
   }
   getGetSharedWithTaskName(): string {
-    return 'GetSharedWithTaskName'
+    return 'GetSharedWithTaskName';
   }
   createCreateTask<E extends UnknownExtra>(
     actor: Actor,
@@ -99,9 +99,8 @@ export default class TaskManager implements ItemTaskManager {
   }
   createDeleteTask(
     actor: Actor,
-    objectId: string,
-    extra?: unknown,
-  ): Task<Actor, Item<UnknownExtra>> {
+    item?: Item,
+  ): Task<Actor, unknown> {
     throw new Error('Method createDeleteTask not implemented.');
   }
   createMoveTask(
