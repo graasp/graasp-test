@@ -58,9 +58,13 @@ export default class TaskManager implements ItemMembershipTaskManager {
     actor: Actor,
     itemId: string,
   ): Task<Actor, unknown>[] {
-    throw new Error('Method createDeleteAllOnAndBelowItemTaskSequence not implemented.');
+    throw new Error(
+      'Method createDeleteAllOnAndBelowItemTaskSequence not implemented.',
+    );
   }
   createGetMemberItemMembershipTask(actor: Actor): Task<Actor, ItemMembership> {
-    throw new Error('Method createGetMemberItemMembershipTask not implemented.');
+    throw new Error(
+      'Method createGetMemberItemMembershipTask not implemented.',
+    );
   }
 }

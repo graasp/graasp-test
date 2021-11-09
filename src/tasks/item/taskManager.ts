@@ -42,6 +42,13 @@ export default class TaskManager implements ItemTaskManager {
   ): Task<Actor, unknown>[] {
     throw new Error('Method createCopyTaskSequence not implemented.');
   }
+  createCopySubTaskSequence(
+    actor: Actor,
+    itemTask: Task<Actor, Item>,
+    parentId?: string,
+  ): Task<Actor, unknown>[] {
+    throw new Error('Method createCopySubTaskSequence not implemented.');
+  }
   createGetChildrenTaskSequence(
     actor: Actor,
     itemId: string,
@@ -100,7 +107,7 @@ export default class TaskManager implements ItemTaskManager {
   createDeleteTask(
     actor: Actor,
     item?: Item,
-  ): Task<Actor, unknown> {
+  ): Task<Actor, Item<UnknownExtra>> {
     throw new Error('Method createDeleteTask not implemented.');
   }
   createMoveTask(
@@ -120,8 +127,8 @@ export default class TaskManager implements ItemTaskManager {
   createGetChildrenTask(
     actor: Actor,
     input?: {
-      itemId: string,
-      ordered?: boolean
+      itemId: string;
+      ordered?: boolean;
     },
   ): Task<Actor, Item<UnknownExtra>[]> {
     throw new Error('Method createGetChildrenTask not implemented.');
