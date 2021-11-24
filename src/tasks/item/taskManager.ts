@@ -38,14 +38,14 @@ export default class TaskManager implements ItemTaskManager {
   createCopyTaskSequence(
     actor: Actor,
     itemId: string,
-    parentId?: string,
+    options: { parentId?: string, shouldCopyTags?: boolean },
   ): Task<Actor, unknown>[] {
     throw new Error('Method createCopyTaskSequence not implemented.');
   }
   createCopySubTaskSequence(
     actor: Actor,
     itemTask: Task<Actor, Item>,
-    parentId?: string,
+    options: { parentId?: string, shouldCopyTags?: boolean },
   ): Task<Actor, unknown>[] {
     throw new Error('Method createCopySubTaskSequence not implemented.');
   }
@@ -120,7 +120,7 @@ export default class TaskManager implements ItemTaskManager {
   createCopyTask(
     actor: Actor,
     itemId: string,
-    parentId?: string,
+    options: { parentId?: string, shouldCopyTags?: boolean },
   ): Task<Actor, Item<UnknownExtra>> {
     throw new Error('Method createCopyTask not implemented.');
   }
