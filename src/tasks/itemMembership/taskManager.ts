@@ -1,4 +1,10 @@
-import { Actor, ItemMembershipTaskManager, ItemMembership, Task } from 'graasp';
+import {
+  Actor,
+  ItemMembershipTaskManager,
+  ItemMembership,
+  Task,
+  Item,
+} from 'graasp';
 
 export default class TaskManager implements ItemMembershipTaskManager {
   getCreateTaskName(): string {
@@ -47,7 +53,16 @@ export default class TaskManager implements ItemMembershipTaskManager {
   ): Task<Actor, unknown>[] {
     throw new Error('Method createDeleteTaskSequence not implemented.');
   }
-
+  createGetOfItemTask(member: Actor, item?: Item): Task<Actor, unknown> {
+    throw new Error('Method createGetOfItemTask not implemented.');
+  }
+  createGetOfManyItemsTask(
+    member: Actor,
+    items?: Item[],
+    shouldValidatePermission?: boolean,
+  ): Task<Actor, unknown> {
+    throw new Error('Method createGetOfManyItemsTask not implemented.');
+  }
   createGetOfItemTaskSequence(
     actor: Actor,
     itemId: string,
