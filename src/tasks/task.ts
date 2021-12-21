@@ -15,6 +15,7 @@ export default class MockTask implements Task<Actor, Item> {
   _result = null;
 
   constructor(result?) {
+    this.result = result;
     this.getResult = () => result;
     this.getInput = () => result;
   }
