@@ -38,14 +38,14 @@ export default class TaskManager implements ItemTaskManager {
   createCopyTaskSequence(
     actor: Actor,
     itemId: string,
-    options: { parentId?: string, shouldCopyTags?: boolean },
+    options: { parentId?: string; shouldCopyTags?: boolean },
   ): Task<Actor, unknown>[] {
     throw new Error('Method createCopyTaskSequence not implemented.');
   }
   createCopySubTaskSequence(
     actor: Actor,
     itemTask: Task<Actor, Item>,
-    options: { parentId?: string, shouldCopyTags?: boolean },
+    options: { parentId?: string; shouldCopyTags?: boolean },
   ): Task<Actor, unknown>[] {
     throw new Error('Method createCopySubTaskSequence not implemented.');
   }
@@ -97,6 +97,12 @@ export default class TaskManager implements ItemTaskManager {
   ): Task<Actor, Item<E>> {
     throw new Error('Method createGetTask not implemented.');
   }
+  createGetManyTask<E extends UnknownExtra>(
+    actor: Actor,
+    itemIds?: string[],
+  ): Task<Actor, Item<E>> {
+    throw new Error('Method createGetManyTask not implemented.');
+  }
   createUpdateTask<E extends UnknownExtra>(
     actor: Actor,
     objectId: string,
@@ -104,10 +110,7 @@ export default class TaskManager implements ItemTaskManager {
   ): Task<Actor, Item<E>> {
     throw new Error('Method createUpdateTask not implemented.');
   }
-  createDeleteTask(
-    actor: Actor,
-    item?: Item,
-  ): Task<Actor, Item<UnknownExtra>> {
+  createDeleteTask(actor: Actor, item?: Item): Task<Actor, Item<UnknownExtra>> {
     throw new Error('Method createDeleteTask not implemented.');
   }
   createMoveTask(
@@ -120,7 +123,7 @@ export default class TaskManager implements ItemTaskManager {
   createCopyTask(
     actor: Actor,
     itemId: string,
-    options: { parentId?: string, shouldCopyTags?: boolean },
+    options: { parentId?: string; shouldCopyTags?: boolean },
   ): Task<Actor, Item<UnknownExtra>> {
     throw new Error('Method createCopyTask not implemented.');
   }
