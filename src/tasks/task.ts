@@ -1,6 +1,6 @@
 import { Actor, Item, TaskStatus, Task } from 'graasp';
 
-type InputType = any;
+type InputType = unknown;
 
 export default class MockTask implements Task<Actor, Item> {
   get name(): string {

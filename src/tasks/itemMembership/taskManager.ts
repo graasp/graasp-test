@@ -24,60 +24,62 @@ export default class TaskManager implements ItemMembershipTaskManager {
   }
 
   createCreateTask(
-    actor: Actor,
-    data: Partial<ItemMembership>,
+    _actor: Actor,
+    _data: Partial<ItemMembership>,
   ): Task<Actor, ItemMembership> {
     throw new Error('Method createCreateTask not implemented.');
   }
   createCreateTaskSequence(
-    actor: Actor,
-    object: Partial<ItemMembership>,
-    extra?: unknown,
+    _actor: Actor,
+    _object: Partial<ItemMembership>,
+    _extra?: unknown,
   ): Task<Actor, unknown>[] {
     throw new Error('Method createCreateTaskSequence not implemented.');
   }
-  createGetTask(actor: Actor, objectId: string): Task<Actor, ItemMembership> {
+  createGetTask(_actor: Actor, _objectId: string): Task<Actor, ItemMembership> {
     throw new Error('Method createGetTask not implemented.');
   }
   createUpdateTaskSequence(
-    actor: Actor,
-    objectId: string,
-    object: Partial<ItemMembership>,
+    _actor: Actor,
+    _objectId: string,
+    _object: Partial<ItemMembership>,
   ): Task<Actor, unknown>[] {
     throw new Error('Method createUpdateTaskSequence not implemented.');
   }
   createDeleteTaskSequence(
-    actor: Actor,
-    objectId: string,
-    extra?: unknown,
+    __actor: Actor,
+    _objectId: string,
+    _extra?: unknown,
   ): Task<Actor, unknown>[] {
     throw new Error('Method createDeleteTaskSequence not implemented.');
   }
-  createGetOfItemTask(member: Actor, item?: Item): Task<Actor, unknown> {
+  createGetOfItemTask(_member: Actor, _item?: Item): Task<Actor, unknown> {
     throw new Error('Method createGetOfItemTask not implemented.');
   }
   createGetOfManyItemsTask(
-    member: Actor,
-    items?: Item[],
-    shouldValidatePermission?: boolean,
+    _member: Actor,
+    _items?: Item[],
+    _shouldValidatePermission?: boolean,
   ): Task<Actor, unknown> {
     throw new Error('Method createGetOfManyItemsTask not implemented.');
   }
   createGetOfItemTaskSequence(
-    actor: Actor,
-    itemId: string,
+    _actor: Actor,
+    _itemId: string,
   ): Task<Actor, unknown>[] {
     throw new Error('Method createGetOfItemTaskSequence not implemented.');
   }
   createDeleteAllOnAndBelowItemTaskSequence(
-    actor: Actor,
-    itemId: string,
+    _actor: Actor,
+    _itemId: string,
   ): Task<Actor, unknown>[] {
     throw new Error(
       'Method createDeleteAllOnAndBelowItemTaskSequence not implemented.',
     );
   }
-  createGetMemberItemMembershipTask(actor: Actor): Task<Actor, ItemMembership> {
+  createGetMemberItemMembershipTask(
+    _actor: Actor,
+  ): Task<Actor, ItemMembership> {
     throw new Error(
       'Method createGetMemberItemMembershipTask not implemented.',
     );
