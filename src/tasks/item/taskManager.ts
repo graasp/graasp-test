@@ -2,57 +2,57 @@ import { Actor, Item, ItemTaskManager, Task, UnknownExtra } from 'graasp';
 
 export default class TaskManager implements ItemTaskManager {
   createCreateTaskSequence(
-    actor: Actor,
-    object: Partial<Item<UnknownExtra>>,
-    extra?: unknown,
+    _actor: Actor,
+    _object: Partial<Item<UnknownExtra>>,
+    _extra?: unknown,
   ): Task<Actor, unknown>[] {
     throw new Error('Method createCreateTaskSequence not implemented.');
   }
   createGetTaskSequence(
-    actor: Actor,
-    objectId: string,
+    _actor: Actor,
+    _objectId: string,
   ): Task<Actor, unknown>[] {
     throw new Error('Method createGetTaskSequence not implemented.');
   }
   createUpdateTaskSequence(
-    actor: Actor,
-    objectId: string,
-    object: Partial<Item<UnknownExtra>>,
+    _actor: Actor,
+    _objectId: string,
+    _object: Partial<Item<UnknownExtra>>,
   ): Task<Actor, unknown>[] {
     throw new Error('Method createUpdateTaskSequence not implemented.');
   }
   createDeleteTaskSequence(
-    actor: Actor,
-    objectId: string,
-    extra?: unknown,
+    _actor: Actor,
+    _objectId: string,
+    _extra?: unknown,
   ): Task<Actor, unknown>[] {
     throw new Error('Method createDeleteTaskSequence not implemented.');
   }
   createMoveTaskSequence(
-    actor: Actor,
-    itemId: string,
-    parentId?: string,
+    _actor: Actor,
+    _itemId: string,
+    _parentId?: string,
   ): Task<Actor, unknown>[] {
     throw new Error('Method createMoveTaskSequence not implemented.');
   }
   createCopyTaskSequence(
-    actor: Actor,
-    itemId: string,
-    options: { parentId?: string; shouldCopyTags?: boolean },
+    _actor: Actor,
+    _itemId: string,
+    _options: { parentId?: string; shouldCopyTags?: boolean },
   ): Task<Actor, unknown>[] {
     throw new Error('Method createCopyTaskSequence not implemented.');
   }
   createCopySubTaskSequence(
-    actor: Actor,
-    itemTask: Task<Actor, Item>,
-    options: { parentId?: string; shouldCopyTags?: boolean },
+    _actor: Actor,
+    _itemTask: Task<Actor, Item>,
+    _options: { parentId?: string; shouldCopyTags?: boolean },
   ): Task<Actor, unknown>[] {
     throw new Error('Method createCopySubTaskSequence not implemented.');
   }
   createGetChildrenTaskSequence(
-    actor: Actor,
-    itemId: string,
-    ordered?: boolean,
+    _actor: Actor,
+    _itemId: string,
+    _ordered?: boolean,
   ): Task<Actor, unknown>[] {
     throw new Error('Method createGetChildrenTaskSequence not implemented.');
   }
@@ -85,61 +85,64 @@ export default class TaskManager implements ItemTaskManager {
     return 'GetSharedWithTaskName';
   }
   createCreateTask<E extends UnknownExtra>(
-    actor: Actor,
-    object: Partial<Item<E>>,
-    extra?: unknown,
+    _actor: Actor,
+    _object: Partial<Item<E>>,
+    _extra?: unknown,
   ): Task<Actor, Item<E>> {
     throw new Error('Method createCreateTask not implemented.');
   }
   createGetTask<E extends UnknownExtra>(
-    actor: Actor,
-    objectId: string,
+    _actor: Actor,
+    _objectId: string,
   ): Task<Actor, Item<E>> {
     throw new Error('Method createGetTask not implemented.');
   }
   createGetManyTask<E extends UnknownExtra>(
-    actor: Actor,
-    itemIds?: string[],
+    _actor: Actor,
+    _itemIds?: string[],
   ): Task<Actor, Item<E>> {
     throw new Error('Method createGetManyTask not implemented.');
   }
   createUpdateTask<E extends UnknownExtra>(
-    actor: Actor,
-    objectId: string,
-    object: Partial<Item<E>>,
+    _actor: Actor,
+    _objectId: string,
+    _object: Partial<Item<E>>,
   ): Task<Actor, Item<E>> {
     throw new Error('Method createUpdateTask not implemented.');
   }
-  createDeleteTask(actor: Actor, item?: Item): Task<Actor, Item<UnknownExtra>> {
+  createDeleteTask(
+    _actor: Actor,
+    _item?: Item,
+  ): Task<Actor, Item<UnknownExtra>> {
     throw new Error('Method createDeleteTask not implemented.');
   }
   createMoveTask(
-    actor: Actor,
-    itemId: string,
-    parentId?: string,
+    _actor: Actor,
+    _itemId: string,
+    _parentId?: string,
   ): Task<Actor, Item<UnknownExtra>> {
     throw new Error('Method createMoveTask not implemented.');
   }
   createCopyTask(
-    actor: Actor,
-    itemId: string,
-    options: { parentId?: string; shouldCopyTags?: boolean },
+    _actor: Actor,
+    _itemId: string,
+    _options: { parentId?: string; shouldCopyTags?: boolean },
   ): Task<Actor, Item<UnknownExtra>> {
     throw new Error('Method createCopyTask not implemented.');
   }
   createGetChildrenTask(
-    actor: Actor,
-    input?: {
+    _actor: Actor,
+    _input?: {
       itemId: string;
       ordered?: boolean;
     },
   ): Task<Actor, Item<UnknownExtra>[]> {
     throw new Error('Method createGetChildrenTask not implemented.');
   }
-  createGetOwnTask(actor: Actor): Task<Actor, Item<UnknownExtra>[]> {
+  createGetOwnTask(_actor: Actor): Task<Actor, Item<UnknownExtra>[]> {
     throw new Error('Method createGetOwnTask not implemented.');
   }
-  createGetSharedWithTask(actor: Actor): Task<Actor, Item<UnknownExtra>[]> {
+  createGetSharedWithTask(_actor: Actor): Task<Actor, Item<UnknownExtra>[]> {
     throw new Error('Method createGetSharedWithTask not implemented.');
   }
 }
