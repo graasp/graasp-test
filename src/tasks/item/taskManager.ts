@@ -100,7 +100,7 @@ export default class TaskManager implements ItemTaskManager {
   createGetManyTask<E extends UnknownExtra>(
     _actor: Actor,
     _itemIds?: string[],
-  ): Task<Actor, Item<E>> {
+  ): Task<Actor, unknown> {
     throw new Error('Method createGetManyTask not implemented.');
   }
   createUpdateTask<E extends UnknownExtra>(
@@ -113,7 +113,7 @@ export default class TaskManager implements ItemTaskManager {
   createDeleteTask(
     _actor: Actor,
     _item?: Item,
-  ): Task<Actor, Item<UnknownExtra>> {
+  ): Task<Actor, unknown> {
     throw new Error('Method createDeleteTask not implemented.');
   }
   createMoveTask(
