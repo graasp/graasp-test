@@ -93,10 +93,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/graasp@github:graasp/graasp-types":
+"@types/graasp@github:graasp/graasp-types#13/getManyTaskName":
   version: 0.1.0
-  resolution: "@types/graasp@https://github.com/graasp/graasp-types.git#commit=5ff084a228a282f1301ae9cfe3d2d99e1b777f06"
-  checksum: 53db11d6e2f1ab95454372a3ffe44440c458a047e0965d0d495a0bde8ba4deb5b5499a69574902633629cc1d47a20ea6e5dea4c95e238e601a452225934032f5
+  resolution: "@types/graasp@https://github.com/graasp/graasp-types.git#commit=8eaccde21d907c7a14b0065b6b4444c0285ca8be"
+  checksum: 8fc2a6239b030bb4bed1d582525b474eb58597bd2da6a76abc026d23c4a03925983e50cb5da8bf5e31869d0009f154f6a6c6ee6df31a95a8e5722931d0f0cca4
   languageName: node
   linkType: hard
 
@@ -901,7 +901,7 @@ __metadata:
   resolution: "graasp-test@workspace:."
   dependencies:
     "@types/eslint": ^8.2.1
-    "@types/graasp": "github:graasp/graasp-types"
+    "@types/graasp": "github:graasp/graasp-types#13/getManyTaskName"
     "@types/node": ^17.0.8
     "@typescript-eslint/eslint-plugin": ^5.9.0
     "@typescript-eslint/parser": ^5.9.0
