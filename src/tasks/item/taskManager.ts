@@ -63,6 +63,9 @@ export default class TaskManager implements ItemTaskManager {
   getGetTaskName(): string {
     return 'GetTaskName';
   }
+  getGetManyTaskName(): string {
+    return 'GetManyTaskName';
+  }
   getUpdateTaskName(): string {
     return 'GetTaskName';
   }
