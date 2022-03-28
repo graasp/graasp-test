@@ -93,9 +93,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/graasp@github:graasp/graasp-types#16/getChildrenTaskInput":
+"@types/graasp@github:graasp/graasp-types":
   version: 0.1.0
-  resolution: "@types/graasp@https://github.com/graasp/graasp-types.git#commit=de30027e13b056f94872bd5ddaeaa40eec569ebd"
+  resolution: "@types/graasp@https://github.com/graasp/graasp-types.git#commit=c49643d52243f9819678a53cfe46080c17c321ba"
   checksum: cabc5781ead8f3e9a2a1849b815ac0b4df7795fa871aec9efbc27a3d26119338819533301cccaa51ff87b74eb74a0d2a5595b18e840a6314eaf6698150722843
   languageName: node
   linkType: hard
@@ -901,7 +901,7 @@ __metadata:
   resolution: "graasp-test@workspace:."
   dependencies:
     "@types/eslint": ^8.2.1
-    "@types/graasp": "github:graasp/graasp-types#16/getChildrenTaskInput"
+    "@types/graasp": "github:graasp/graasp-types"
     "@types/node": ^17.0.8
     "@typescript-eslint/eslint-plugin": ^5.9.0
     "@typescript-eslint/parser": ^5.9.0
