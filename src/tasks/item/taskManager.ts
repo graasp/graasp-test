@@ -136,7 +136,7 @@ export default class TaskManager implements ItemTaskManager {
   createGetChildrenTask(
     _actor: Actor,
     _input?: {
-      itemId: string;
+      item: Item;
       ordered?: boolean;
     },
   ): Task<Actor, Item<UnknownExtra>[]> {
