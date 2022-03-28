@@ -95,8 +95,8 @@ __metadata:
 
 "@types/graasp@github:graasp/graasp-types":
   version: 0.1.0
-  resolution: "@types/graasp@https://github.com/graasp/graasp-types.git#commit=f928605803d55ce7b51d87f9c915d2390ff029be"
-  checksum: 8fc2a6239b030bb4bed1d582525b474eb58597bd2da6a76abc026d23c4a03925983e50cb5da8bf5e31869d0009f154f6a6c6ee6df31a95a8e5722931d0f0cca4
+  resolution: "@types/graasp@https://github.com/graasp/graasp-types.git#commit=c49643d52243f9819678a53cfe46080c17c321ba"
+  checksum: cabc5781ead8f3e9a2a1849b815ac0b4df7795fa871aec9efbc27a3d26119338819533301cccaa51ff87b74eb74a0d2a5595b18e840a6314eaf6698150722843
   languageName: node
   linkType: hard
 
