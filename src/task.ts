@@ -1,4 +1,4 @@
-import { Actor, Item, TaskStatus, Task } from 'graasp';
+import { Actor, Item, Task, TaskStatus } from 'graasp';
 
 type InputType = unknown;
 

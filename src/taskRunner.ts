@@ -1,10 +1,11 @@
 import { FastifyLoggerInstance } from 'fastify';
+
 import {
   Actor,
-  Task,
-  TaskRunner,
   PostHookHandlerType,
   PreHookHandlerType,
+  Task,
+  TaskRunner,
 } from 'graasp';
 
 export default class Runner implements TaskRunner<Actor> {

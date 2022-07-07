@@ -1,9 +1,9 @@
 import {
   Actor,
-  ItemMembershipTaskManager,
-  ItemMembership,
-  Task,
   Item,
+  ItemMembership,
+  ItemMembershipTaskManager,
+  Task,
 } from 'graasp';
 
 export default class TaskManager implements ItemMembershipTaskManager {
