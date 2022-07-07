@@ -14,7 +14,7 @@ export const buildMember = (options: {
   createdAt: '2021-03-29T08:46:52.939Z',
   updatedAt: '2021-03-29T08:46:52.939Z',
   extra: options.extra ?? {},
-  type: MemberType.Individual,
+  type: 'individual' as MemberType,
 });
 
 export const GRAASP_ACTOR = buildMember({

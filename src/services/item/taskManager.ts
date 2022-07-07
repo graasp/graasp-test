@@ -136,7 +136,7 @@ export default class TaskManager implements ItemTaskManager {
   createGetChildrenTask(
     _actor: Actor,
     _input?: {
-      item: Item;
+      item?: Item;
       ordered?: boolean;
     },
   ): Task<Actor, Item<UnknownExtra>[]> {
@@ -155,3 +155,4 @@ export default class TaskManager implements ItemTaskManager {
     throw new Error('Method createGetDescendantsTask not implemented.');
   }
 }
+
