@@ -6,7 +6,7 @@ import {
   PreHookHandlerType,
   Task,
   TaskRunner,
-} from 'graasp';
+} from '@graasp/sdk';
 
 export default class Runner implements TaskRunner<Actor> {
   runSingle<T>(

@@ -1,4 +1,4 @@
-import { Actor, Item, ItemTaskManager, Task, UnknownExtra } from 'graasp';
+import { Actor, Item, ItemTaskManager, Task, UnknownExtra } from '@graasp/sdk';
 
 export default class TaskManager implements ItemTaskManager {
   createCreateTaskSequence(
@@ -155,4 +155,3 @@ export default class TaskManager implements ItemTaskManager {
     throw new Error('Method createGetDescendantsTask not implemented.');
   }
 }
-

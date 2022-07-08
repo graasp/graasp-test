@@ -25,9 +25,9 @@
   },
   "homepage": "https://github.com/graasp/graasp-test#readme",
   "devDependencies": {
+    "@graasp/sdk": "github:graasp/graasp-utils#15/testUtils",
     "@trivago/prettier-plugin-sort-imports": "3.2.0",
     "@types/eslint": "^8.2.1",
-    "@types/graasp": "github:graasp/graasp-types",
     "@types/node": "^17.0.8",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",

@@ -4,7 +4,7 @@ import {
   ItemMembership,
   ItemMembershipTaskManager,
   Task,
-} from 'graasp';
+} from '@graasp/sdk';
 
 export default class TaskManager implements ItemMembershipTaskManager {
   getCreateTaskName(): string {

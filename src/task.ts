@@ -1,4 +1,4 @@
-import { Actor, Item, Task, TaskStatus } from 'graasp';
+import { Actor, Item, Task, TaskStatus } from '@graasp/sdk';
 
 type InputType = unknown;
 
@@ -6,7 +6,7 @@ export default class MockTask implements Task<Actor, Item> {
   get name(): string {
     return 'name';
   }
-  status = 'RUNNING' as TaskStatus;
+  status = TaskStatus.RUNNING;
   input: InputType;
   getInput: () => InputType;
   getResult: () => unknown;
@@ -21,6 +21,6 @@ export default class MockTask implements Task<Actor, Item> {
   }
 
   async run(): Promise<void> {
-    this.status = 'OK';
+    this.status = TaskStatus.OK;
   }
 }
