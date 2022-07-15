@@ -39,7 +39,6 @@
   },
   "packageManager": "yarn@3.2.0-rc.3",
   "dependencies": {
-    "@graasp/utils": "github:graasp/graasp-utils#15/testUtils",
     "uuid": "8.3.2"
   }
 }

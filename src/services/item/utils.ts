@@ -1,6 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
 
-import { buildPathFromId } from '@graasp/utils';
 import { Item, ItemSettings, UnknownExtra } from 'graasp';
 
 import { GRAASP_ACTOR } from '../member/utils';
@@ -30,7 +29,7 @@ export const buildItem = (
     settings = {} as ItemSettings,
   } = options;
   const buildId = id ?? uuidv4();
-  let buildPath = path ?? buildPathFromId(buildId);
+  let buildPath = path ?? buildId.replace(/-/, '_');
 
   if (parentPath) buildPath = `${parentPath}.${buildPath}`;
 
