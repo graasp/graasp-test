@@ -1,18 +1,18 @@
-import { Actor, Item, Task, TaskStatus } from '@graasp/sdk';
+import { Actor, Task, TaskStatus } from '@graasp/sdk';
 
 type InputType = unknown;
 
-export default class MockTask implements Task<Actor, Item> {
+export default class MockTask<E = unknown> implements Task<Actor, E> {
   get name(): string {
     return 'name';
   }
   status = TaskStatus.RUNNING;
   input: InputType;
   getInput: () => InputType;
-  getResult: () => unknown;
+  getResult: () => E;
   actor: Actor;
-  result;
-  _result;
+  result: E = null;
+  _result: E = null;
 
   constructor(result?) {
     this.result = result;
