@@ -1,4 +1,4 @@
-import { Actor, Item, TaskStatus, Task } from 'graasp';
+import { Actor, Item, Task, TaskStatus } from 'graasp';
 
 type InputType = unknown;
 
@@ -11,8 +11,8 @@ export default class MockTask implements Task<Actor, Item> {
   getInput: () => InputType;
   getResult: () => unknown;
   actor: Actor;
-  result = null;
-  _result = null;
+  result;
+  _result;
 
   constructor(result?) {
     this.result = result;

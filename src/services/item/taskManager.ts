@@ -87,6 +87,9 @@ export default class TaskManager implements ItemTaskManager {
   getGetSharedWithTaskName(): string {
     return 'GetSharedWithTaskName';
   }
+  getGetDescendantsTaskName(): string {
+    return 'GetDescendantsTaskName';
+  }
   createCreateTask<E extends UnknownExtra>(
     _actor: Actor,
     _object: Partial<Item<E>>,
@@ -113,10 +116,7 @@ export default class TaskManager implements ItemTaskManager {
   ): Task<Actor, Item<E>> {
     throw new Error('Method createUpdateTask not implemented.');
   }
-  createDeleteTask(
-    _actor: Actor,
-    _item?: Item,
-  ): Task<Actor, unknown> {
+  createDeleteTask(_actor: Actor, _item?: Item): Task<Actor, unknown> {
     throw new Error('Method createDeleteTask not implemented.');
   }
   createMoveTask(
@@ -136,7 +136,7 @@ export default class TaskManager implements ItemTaskManager {
   createGetChildrenTask(
     _actor: Actor,
     _input?: {
-      item: Item;
+      item?: Item;
       ordered?: boolean;
     },
   ): Task<Actor, Item<UnknownExtra>[]> {
@@ -148,4 +148,11 @@ export default class TaskManager implements ItemTaskManager {
   createGetSharedWithTask(_actor: Actor): Task<Actor, Item<UnknownExtra>[]> {
     throw new Error('Method createGetSharedWithTask not implemented.');
   }
+  createGetDescendantsTask(
+    _actor: Actor,
+    _input?: { item: Item },
+  ): Task<Actor, Item<UnknownExtra>[]> {
+    throw new Error('Method createGetDescendantsTask not implemented.');
+  }
 }
+
