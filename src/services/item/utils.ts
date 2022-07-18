@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 
-import { Item, ItemSettings, UnknownExtra } from 'graasp';
+import { Item, ItemSettings, UnknownExtra } from '@graasp/sdk';
 
 import { GRAASP_ACTOR } from '../member/utils';
 

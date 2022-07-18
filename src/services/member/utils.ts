@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 
-import { Member, MemberType, UnknownExtra } from 'graasp';
+import { Member, MemberType, UnknownExtra } from '@graasp/sdk';
 
 export const buildMember = (options: {
   id?: string;
