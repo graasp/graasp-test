@@ -27,7 +27,7 @@
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "3.2.0",
     "@types/eslint": "^8.2.1",
-    "@types/graasp": "github:graasp/graasp-types#23/createGetDescendantsTask",
+    "@types/graasp": "github:graasp/graasp-types",
     "@types/node": "^17.0.8",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
@@ -37,7 +37,7 @@
     "prettier": "^2.5.1",
     "typescript": "^4.0.5"
   },
-  "packageManager": "yarn@3.2.0-rc.3",
+  "packageManager": "yarn@3.2.1",
   "dependencies": {
     "uuid": "8.3.2"
   }
