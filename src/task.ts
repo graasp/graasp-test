@@ -10,7 +10,7 @@ export default class MockTask<E = unknown> implements Task<Actor, E> {
   input: InputType;
   getInput: () => InputType;
   getResult: () => E;
-  actor: Actor;
+  actor: Actor = null;
   result: E = null;
   _result: E = null;
 
