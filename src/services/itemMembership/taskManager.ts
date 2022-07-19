@@ -3,7 +3,7 @@ import {
   Item,
   ItemMembership,
   ItemMembershipTaskManager,
-  Task,
+  Task, PermissionLevel
 } from '@graasp/sdk';
 
 export default class TaskManager implements ItemMembershipTaskManager {
@@ -79,7 +79,24 @@ export default class TaskManager implements ItemMembershipTaskManager {
   }
   createGetMemberItemMembershipTask(
     _actor: Actor,
+    _args: {
+      item?: Item;
+      validatePermission?: PermissionLevel;
+    }
   ): Task<Actor, ItemMembership> {
+    throw new Error(
+      'Method createGetMemberItemMembershipTask not implemented.',
+    );
+  }
+  createGetAdminMembershipTaskSequence(
+    _actor: Actor,
+    _itemId: string
+  ): Task<Actor, unknown>[] {
+    throw new Error(
+      'Method createGetMemberItemMembershipTask not implemented.',
+    );
+  }
+  createCreateSubTaskSequence(_actor: Actor, _args: { data?: Partial<ItemMembership>; item?: Item }): Task<Actor, unknown>[] {
     throw new Error(
       'Method createGetMemberItemMembershipTask not implemented.',
     );
