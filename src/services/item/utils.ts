@@ -35,7 +35,7 @@ export const buildItem = (
 
   return {
     id: buildId,
-    name: name ?? id,
+    name: name ?? buildId,
     description: description ?? 'some description',
     type: type || 'folder',
     path: buildPath,
