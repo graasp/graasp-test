@@ -154,8 +154,10 @@ export default class TaskManager implements ItemTaskManager {
   ): Task<Actor, Item<UnknownExtra>[]> {
     throw new Error('Method createGetDescendantsTask not implemented.');
   }
-  createGetDescendantsTaskSequence(_actor: Actor,
-    _itemId: string): Task<Actor, unknown>[] {
+  createGetDescendantsTaskSequence(
+    _actor: Actor,
+    _itemId: string,
+  ): Task<Actor, unknown>[] {
     throw new Error('Method createGetDescendantsTaskSequence not implemented.');
   }
 }
