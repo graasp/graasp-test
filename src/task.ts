@@ -1,18 +1,23 @@
-import { Actor, Item, Task, TaskStatus } from 'graasp';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+// this mock task allows us to create a fake test to be created
+// this is usually never run
+// we disable the check because actor (and other props) is never defined
+import { Actor, Task, TaskStatus } from '@graasp/sdk';
 
 type InputType = unknown;
 
-export default class MockTask implements Task<Actor, Item> {
+export default class MockTask<E = unknown> implements Task<Actor, E> {
   get name(): string {
     return 'name';
   }
-  status = 'RUNNING' as TaskStatus;
+  status = TaskStatus.RUNNING;
   input: InputType;
   getInput: () => InputType;
-  getResult: () => unknown;
+  getResult: () => E;
   actor: Actor;
-  result;
-  _result;
+  result: E;
+  _result: E;
 
   constructor(result?) {
     this.result = result;
@@ -21,6 +26,6 @@ export default class MockTask implements Task<Actor, Item> {
   }
 
   async run(): Promise<void> {
-    this.status = 'OK';
+    this.status = TaskStatus.OK;
   }
 }
