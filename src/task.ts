@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
 // this mock task allows us to create a fake test to be created
 // this is usually never run
