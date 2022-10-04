@@ -1,13 +1,13 @@
 import { v4 as uuidv4 } from 'uuid';
 
-import { Item, ItemSettings, UnknownExtra } from '@graasp/sdk';
+import { Item, ItemSettings, ItemType, UnknownExtra } from '@graasp/sdk';
 
 import { GRAASP_ACTOR } from '../member/utils';
 
 export const buildItem = (
   options: {
     name?: string;
-    type?: string;
+    type?: ItemType;
     path?: string;
     description?: string;
     id?: string;
@@ -37,7 +37,7 @@ export const buildItem = (
     id: buildId,
     name: name ?? buildId,
     description: description ?? 'some description',
-    type: type || 'folder',
+    type: type || ItemType.FOLDER,
     path: buildPath,
     extra: extra || {},
     creator: creator,
