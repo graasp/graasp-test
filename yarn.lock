@@ -334,19 +334,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graasp/sdk@github:graasp/graasp-sdk":
-  version: 0.1.0
-  resolution: "@graasp/sdk@https://github.com/graasp/graasp-sdk.git#commit=513b28bc7081aca26ab55088eb12618f51eff922"
+"@graasp/sdk@npm:0.2.0":
+  version: 0.2.0
+  resolution: "@graasp/sdk@npm:0.2.0"
   dependencies:
     "@fastify/secure-session": 5.2.0
     aws-sdk: 2.1111.0
-    fastify: ^3.29.1
+    fastify: 3.29.1
     fluent-json-schema: 3.1.0
+    immutable: 4.1.0
     js-cookie: 3.0.1
     qs: 6.11.0
     slonik: 28.1.1
     uuid: 8.3.2
-  checksum: b8e2d75f7a35aa3550bcf54aa998e5bb1738447095b4ee26102cf354e748399532ac4518f22a64c2f11d6cba82196dca3cace4256d16fafee0c548885f818193
+  checksum: 95a76c69dd4577f8a0eb51197d83fdb5c61c58c1c6a7c895e7ca543d4883603bc7deb534fd5b7bc4f61b5f15cd0b6c403bf165e6a6a4a756707f9ad877961339
   languageName: node
   linkType: hard
 
@@ -1559,7 +1560,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fastify@npm:^3.29.1":
+"fastify@npm:3.29.1, fastify@npm:^3.29.1":
   version: 3.29.1
   resolution: "fastify@npm:3.29.1"
   dependencies:
@@ -1837,7 +1838,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "graasp-test@workspace:."
   dependencies:
-    "@graasp/sdk": "github:graasp/graasp-sdk"
+    "@graasp/sdk": 0.2.0
     "@trivago/prettier-plugin-sort-imports": 3.2.0
     "@types/eslint": ^8.2.1
     "@types/node": ^17.0.8
@@ -1986,6 +1987,13 @@ __metadata:
   version: 5.1.9
   resolution: "ignore@npm:5.1.9"
   checksum: 6f6b2235f4e63648116c5814f76b2d3d63fae9c21b8a466862e865732f59e787c9938a9042f9457091db6f0d811508ea3c8c6a60f35bafc4ceea08bbe8f96fd5
+  languageName: node
+  linkType: hard
+
+"immutable@npm:4.1.0":
+  version: 4.1.0
+  resolution: "immutable@npm:4.1.0"
+  checksum: b9bc1f14fb18eb382d48339c064b24a1f97ae4cf43102e0906c0a6e186a27afcd18b55ca4a0b63c98eefb58143e2b5ebc7755a5fb4da4a7ad84b7a6096ac5b13
   languageName: node
   linkType: hard
 
