@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/graasp/graasp-test/compare/v1.0.1...v1.0.2) (2023-01-16)
+
+
+### Bug Fixes
+
+* update yarn.lock ([ad6e690](https://github.com/graasp/graasp-test/commit/ad6e69081883a96803c7375359cd7f6430cdaad2))
+
 ## [1.0.1](https://github.com/graasp/graasp-test/compare/v1.0.0...v1.0.1) (2023-01-16)
 
 
