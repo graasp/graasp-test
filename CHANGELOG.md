@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/graasp/graasp-test/compare/v1.0.0...v1.0.1) (2023-01-16)
+
+
+### Bug Fixes
+
+* update package name ([b7a2793](https://github.com/graasp/graasp-test/commit/b7a2793b8c878a17af9056902030634eda9d828c))
+
 ## 1.0.0 (2023-01-16)
 
 
