@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/graasp/graasp-test/compare/v1.0.2...v1.0.3) (2024-01-10)
+
+
+### Bug Fixes
+
+* bump dependencies ([a3709c1](https://github.com/graasp/graasp-test/commit/a3709c123a9ed0076e05bbe1d21a765114ce80f2))
+
 ## [1.0.2](https://github.com/graasp/graasp-test/compare/v1.0.1...v1.0.2) (2023-01-16)
 
 
